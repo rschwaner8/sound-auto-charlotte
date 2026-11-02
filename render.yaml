@@ -1,0 +1,44 @@
+# Copy into the sanitized DealerDesk source root before deploying.
+# This creates a PAID service. Owner billing approval is required first.
+services:
+  - type: web
+    name: sound-auto-charlotte
+    runtime: docker
+    plan: starter
+    region: oregon
+    healthCheckPath: /health
+    disk:
+      name: charlotte-data
+      mountPath: /app/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: DB_PATH
+        value: /app/data/dealerdesk.db
+      - key: LIVE_SEND_APPROVED
+        value: "false"
+      - key: A2P_APPROVED
+        value: "false"
+      - key: CONTROLLED_TEST_APPROVED
+        value: "false"
+      - key: OWNER_NOTIFICATIONS_APPROVED
+        value: "false"
+      - key: PUBLIC_ORIGIN
+        sync: false
+      - key: ADMIN_PASSWORD_DIGEST
+        sync: false
+      - key: STAFF_PASSWORD_DIGEST
+        sync: false
+      - key: INTAKE_TOKEN
+        sync: false
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: TWILIO_FROM
+        value: "+12533224780"
+      - key: BACKUP_ENCRYPTION_KEY
+        sync: false

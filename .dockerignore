@@ -1,0 +1,13 @@
+.env
+.env.*
+.git
+.openai
+data
+runtime
+node_modules
+*.db*
+*.sqlite*
+*.log
+*.zip
+*.tar*
+check.txt

@@ -1,0 +1,42 @@
+{
+  "name": "Sound Auto and Finance",
+  "address": "8415 Pacific Hwy E, Tacoma WA 98422",
+  "website": "https://www.soundautoandfinance.com",
+  "timezone": "America/Los_Angeles",
+  "phone": "+12534483688",
+  "hours": {
+    "start": 9,
+    "end": 19
+  },
+  "weeklyHours": {
+    "0": {
+      "start": 10,
+      "end": 17
+    },
+    "1": {
+      "start": 9,
+      "end": 19
+    },
+    "2": {
+      "start": 9,
+      "end": 19
+    },
+    "3": {
+      "start": 9,
+      "end": 19
+    },
+    "4": {
+      "start": 9,
+      "end": 19
+    },
+    "5": {
+      "start": 9,
+      "end": 19
+    },
+    "6": {
+      "start": 9,
+      "end": 20
+    }
+  },
+  "provenance": "Business name and address confirmed by owner November 2, 2026; inventory feed not connected."
+}
